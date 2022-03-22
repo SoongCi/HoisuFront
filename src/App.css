@@ -1,38 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Imagen - Hero*/
+
+.hero{
+  height: 70vh;
+  width: auto;
+  background-image: url(/src/assets/img/backgroundImg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  width: 30vh;
+  height: auto;
+  margin-top: 15%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Nav - separador*/
+
+nav{
+  width: 100%;
+}
+
+.enlaces{
+  width: 76%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 1.5%;
+  margin: 0% 12%;
 }
 
-.App-link {
-  color: #61dafb;
+.enlaces li{
+  list-style: none;
+  display: inline-block;
+  padding: 2% 1%;
+  margin: 0 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.enlaces .links{
+  font-size: 110%;
+  text-decoration: none;
+  color: rgb(87, 87, 87);
+  padding: 1.5vw;
 }
+
+.enlaces .links:hover{
+  color: aliceblue;
+  background-color:rgb(162, 170, 86);
+}
+
+.enlaces .linksI{
+  font-size: 100%;
+  text-decoration: none;
+  color: rgb(87, 87, 87);
+}
+
+.enlaces .linksI:hover{
+  color: rgb(162, 170, 86);
+}
+
+.separadorNav{
+  width: 80%;
+  color: rgb(87, 87, 87);
+  margin: 0 10%;
+}
+
+/*Footer*/
+
+footer{
+  padding: 0;
+  margin:0;
+  justify-content: center;
+}
+
+
+.cuerpoFooter{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.separadorRedes{
+  width: 50%;
+  color: rgb(87, 87, 87);
+  margin: 1% 25% 5%;
+}
+
+.otros{
+  width: 50%;
+}
+
+.otros li{
+  list-style: none;
+  display: inline-block;
+  padding: 2% 4%;
+  margin: 15% 0 0 0;
+}
+
+.otros .links{
+  font-size: 100%;
+  text-decoration: none;
+  color: rgb(87, 87, 87);
+}
+
+.otros .links:hover{
+  color: rgb(162, 170, 86);
+}
+
+/*Redes sociales*/
+
+.redes{
+  width: 50%;
+}
+
+.redes h2{
+  margin: 5% 0;
+  font-size: 100%;
+  color: rgb(87, 87, 87);
+}
+
+.logoRedes{
+  font-size: 250%;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.logoRedes:hover{
+  color: rgb(162, 170, 86);
+}
+
+
+
+/*Cuerpo Home y cards*/
+
+.bodyHome{
+  width: 76%;
+  justify-content: center;
+  padding: 2%;
+  margin: 0% 12%;
+}
+
+.tituloC{
+  align-items: left;
+  margin: 5% 0;
+  font-size: 175%;
+  color: rgb(162, 170, 86);
+}
+
+.contenedorCards{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  height: 270px;
+  background: rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(209, 211, 201) 0.15em solid;
+  margin: 0% 5%;
+  }
+
+.card:hover {
+  border: rgb(162, 170, 86) 0.2em solid;
+  transform: translateY(-15px);
+  box-shadow: 0 20px 16px #00000015;
+  }
+
+.card{
+  transition: transform 0.2s linear 0.2s;
+}
+
+.imgCard{
+  height: 50%;
+  object-fit: cover;
+}
+
+.card h3{
+  color: rgb(78, 9, 10);
+  margin: 10% 4%;
+}
+
+.card p{
+  color: rgb(131, 102, 102);
+}
+
+.nosotros{
+  margin: 10% 0;
+  background-color: rgb(78, 9, 10);
+  color: aliceblue;
+  width: 100%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.nosotros h2{
+  padding: 5%;
+}
+
+.nosotros p{
+  padding: 0 5% 5%;
+}
+
+/*Slider*/
+
+.slider{
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  margin: 5% 0;
+}
+
+.slider ul{
+  display: flex;
+  animation: cambio 15s infinite alternate linear;
+  width: 400%;
+}
+
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+
+.slider img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-filter: saturate(150%) hue-rotate(45deg) blur(1px);
+  filter: saturate(150%) blur(1px) brightness(70%);
+}
+
+@keyframes cambio{
+  0%{margin-left: 0%;}
+  20%{margin-left: 0%;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+
+.slider .reserva{
+  position: relative;
+  bottom: 50vh;
+}
+
+.slider h2{
+  color: aliceblue;
+  margin: 1%;
+}
+.slider p{
+  color: aliceblue;
+  margin-bottom: 2%;
+}
+.slider .reserva li{
+  list-style: none;
+  display: inline-block;
+}
+
+.slider .reserva .links{
+  background-color: rgb(162, 170, 86);
+  color: aliceblue;
+  padding: 1%;
+  text-decoration: none;
+}
+
+.slider .reserva .links:hover{
+  color: rgb(162, 170, 86);
+  background-color: rgb(78, 9, 10);
+}
+
