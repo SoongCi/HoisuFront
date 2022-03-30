@@ -23,7 +23,7 @@
 .logo{
   width: 30vh;
   height: auto;
-  margin-top: 15%;
+  margin-top: 12%;
 }
 
 /*Nav - separador*/
@@ -51,23 +51,19 @@ nav{
 .enlaces .links{
   font-size: 110%;
   text-decoration: none;
-  color: rgb(87, 87, 87);
-  padding: 1.5vw;
+  color: rgb(255, 255, 255);
+  padding: 1vw;
 }
 
 .enlaces .links:hover{
   color: aliceblue;
-  background-color:rgb(162, 170, 86);
+  background-color:rgb(78, 9, 10, 0.5);
 }
 
 .enlaces .linksI{
   font-size: 100%;
   text-decoration: none;
   color: rgb(87, 87, 87);
-}
-
-.enlaces .linksI:hover{
-  color: rgb(162, 170, 86);
 }
 
 .separadorNav{
@@ -115,7 +111,7 @@ footer{
 }
 
 .otros .links:hover{
-  color: rgb(162, 170, 86);
+  color: rgb(78, 9, 10);
 }
 
 /*Redes sociales*/
@@ -123,21 +119,21 @@ footer{
 .redes{
   width: 50%;
 }
-
 .redes h2{
   margin: 5% 0;
   font-size: 100%;
   color: rgb(87, 87, 87);
 }
-
 .logoRedes{
   font-size: 250%;
   padding: 5%;
   cursor: pointer;
 }
-
 .logoRedes:hover{
-  color: rgb(162, 170, 86);
+  color: rgb(78, 9, 10);
+}
+.logoRedes{
+  transition: color 0.2s linear 0.3s;
 }
 
 
@@ -155,7 +151,7 @@ footer{
   align-items: left;
   margin: 5% 0;
   font-size: 175%;
-  color: rgb(162, 170, 86);
+  color: rgb(51, 0, 1);
 }
 
 .contenedorCards{
@@ -167,8 +163,8 @@ footer{
 }
 
 .card {
-  width: 200px;
-  height: 270px;
+  width: 230px;
+  height: 300px;
   background: rgb(255, 255, 255);
   border-radius: 0.4em;
   box-shadow: 0.3em 0.3em 0.7em #00000015;
@@ -176,46 +172,122 @@ footer{
   border: rgb(209, 211, 201) 0.15em solid;
   margin: 0% 5%;
   }
-
 .card:hover {
-  border: rgb(162, 170, 86) 0.2em solid;
+  border: #a2aa56 0.2em solid;
   transform: translateY(-15px);
   box-shadow: 0 20px 16px #00000015;
   }
-
+.card .btnCard{
+  background-color: rgb(51, 0, 1);
+  border-color: rgb(51, 0, 1);
+  border-radius: 15px;
+  color: aliceblue;
+  margin: 6%;
+  padding: 3% 7%;
+  text-decoration: none;
+}
+.card .btnCard:hover{
+  background-color: rgb(88, 0, 1);
+}
 .card{
   transition: transform 0.2s linear 0.2s;
 }
-
 .imgCard{
   height: 50%;
   object-fit: cover;
 }
-
 .card h3{
-  color: rgb(78, 9, 10);
-  margin: 10% 4%;
+  color: #4e090a;
+  margin: 9% 4%;
 }
-
 .card p{
   color: rgb(131, 102, 102);
 }
 
+
+/*Nosotros y tecnologias*/
+
 .nosotros{
-  margin: 10% 0;
-  background-color: rgb(78, 9, 10);
-  color: aliceblue;
+  margin: 5% 0 0;
   width: 100%;
   border-radius: 15px;
   text-align: center;
 }
 
+.contenedorNosotros1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
 .nosotros h2{
-  padding: 5%;
+  font-size: 7vh;
+  padding: 0 5% 2%;
+  color: rgb(51, 0, 1);
 }
 
-.nosotros p{
-  padding: 0 5% 5%;
+.text1N{
+  width: 60%;
+}
+.nosotros .text1N p{
+  margin: 10%;
+  padding:7% 10%;
+  font-size: 4.3vh;
+  color: rgb(112, 73, 73);
+}
+.img1N{
+  width: 40%;
+}
+.img1N img{
+  width: 90vh;
+  object-fit: cover;
+}
+
+
+.contenedorNosotros2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.text2N{
+  width: 50%;
+}
+.text2N h2{
+  margin: 10% 0 0;
+  font-size: 4.5vh;
+}
+.text2N p{
+  margin: 0;
+  padding:7% 10% 7%;
+  font-size: 4.5vh;
+  color: rgb(112, 73, 73);
+}
+.img2N{
+  width: 50%;
+}
+.img2N img{
+  margin: 0 10% 0 0;
+  width: 70vh;
+  object-fit: cover;
+}
+
+.tecnologias{
+  width: 80%;
+  margin: 10% 10% 2%;
+}
+
+.tecnologias img{
+  height: 10vh;
+  margin: 0 5%;
+  filter: grayscale(100%) brightness(90%);
+}
+
+.tecnologias img:hover{
+  filter: grayscale(0) brightness(100%);
+}
+
+.tecnologias img{
+  transition: filter 0.2s linear 0.3s;
 }
 
 /*Slider*/
@@ -224,7 +296,7 @@ footer{
   width: 100%;
   height: 450px;
   overflow: hidden;
-  margin: 5% 0;
+  margin: 5% 0 2%;
 }
 
 .slider ul{
@@ -279,14 +351,224 @@ footer{
 }
 
 .slider .reserva .links{
-  background-color: rgb(162, 170, 86);
+  background-color: rgb(51, 0, 1);
   color: aliceblue;
   padding: 1%;
   text-decoration: none;
 }
 
 .slider .reserva .links:hover{
-  color: rgb(162, 170, 86);
   background-color: rgb(78, 9, 10);
 }
 
+
+/*Formularios - Contacto*/
+
+.contenedorMainC{
+  background-image: url(../src/assets/img/fondosForm/formu1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.formularioContact{
+  height: 100vh;
+  padding-top:13vh;
+}
+.formularioEmail{
+  margin:0 33%;
+  width: 21rem;
+  height: 26rem;
+  padding: 3%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.formularioEmail h2{
+  font-size: 30px;
+  color: rgb(78, 9, 10);
+}
+
+/*Formularios - Login*/
+
+.contenedorMainL{
+  background-image: url(../src/assets/img/fondosForm/fondoLogin.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.formularioLogin{
+  height: 100vh;
+  padding-top:13vh;
+}
+.formularioL{
+  margin:0 35vw;
+  width: 21rem;
+  height: 23rem;
+  padding: 3%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.formularioL h2{
+  font-size: 30px;
+  color: rgb(78, 9, 10);
+  margin: 10% 0;
+}
+.formRegistro p{
+  font-size: 15px;
+}
+.linkRegistro{
+  font-size: 13px;
+  color: #a32d2f;
+  margin: 10% 2% 0;
+}
+
+
+/*Formularios - RegistroPersona*/
+
+.contenedorMainRP{
+  background-image: url(../src/assets/img/fondosForm/fondoRegistroP.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.formularioRegistro{
+  height: 100vh;
+  padding-top:13vh;
+}
+.formularioRP{
+  margin:0 35vw;
+  width: 21rem;
+  height: 23rem;
+  padding: 3%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.formularioL h2{
+  font-size: 30px;
+  color: rgb(78, 9, 10);
+  margin: 10% 0;
+}
+.formRegistro p{
+  font-size: 15px;
+}
+.linkRegistro{
+  font-size: 13px;
+  color: #a32d2f;
+  margin: 10% 2% 0;
+}
+
+/*Formularios - RegistroEstablecimiento*/
+
+.contenedorMainRE{
+  background-image: url(../src/assets/img/fondosForm/fondoRegistroE.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 45rem;
+}
+.formularioRegistroE{
+  height: 100vh;
+  padding-top:10vh;
+}
+.formularioRE{
+  margin:0 35%;
+  width: 21rem;
+  height: 28rem;
+  padding: 3%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.formularioL h2{
+  font-size: 30px;
+  color: rgb(78, 9, 10);
+  margin: 10% 0;
+}
+.formRegistro p{
+  font-size: 15px;
+}
+.linkRegistro{
+  font-size: 13px;
+  color: #a32d2f;
+  margin: 10% 2% 0;
+}
+.field{
+  display: flex;
+  flex-direction: row;
+  margin: 7% 7% 0;
+}
+.field input{
+  border-bottom: 1px solid rgb(43, 43, 43);
+  width: 20%;
+  height: 40px;
+}
+.field .checkR{
+  border: none;
+  border-bottom: 1px solid rgb(43, 43, 43);
+  outline: none;
+  height: 20px;
+}
+.field .nomCheckbox{
+  font-size: 15px;
+}
+
+
+
+
+.fieldD{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.fieldD input{
+  border: none;
+  border-bottom: 1px solid rgb(43, 43, 43);
+  outline: none;
+  width: 100%;
+  height: 40px;
+}
+.fieldD textarea{
+  border: 1px solid #aaaaaa;
+  outline: none;
+  transition: all 200ms ease;
+}
+.fieldD label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: .5s;
+}
+.fieldD span::before{
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(139, 0, 2);
+  transition: .5s;
+}
+.fieldD input:focus ~ label,
+.fieldD input:valid ~ label{
+  top: -4px;
+  color: rgb(139, 0, 2);
+}
+.fieldD input:focus ~ span::before,
+.fieldD input:valid ~ span::before{
+  width: 100%;
+}
+.labelForm{
+  margin: 0.1rem 0 0.1rem 0;
+}
+.btnEnviar{
+  font-size: 15px;
+  border: 1px;
+  border-color: rgb(78, 9, 10);
+  margin: 7% 0 5%;
+  background-color: rgb(78, 9, 10);
+  padding: 4%;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.btnEnviar:hover{
+  border-color: rgb(107, 0, 2);
+  background-color: rgb(104, 0, 2);
+}

@@ -13,18 +13,20 @@ export const Header = () =>{
                 <div className='logoC'>
                     <Logo/>
                 </div>
+
+                <nav>
+                    <div className="enlaces">
+                        <div className="linksI">
+                            <FontAwesomeIcon icon={faSearch}/> <input type="text" />
+                        </div>
+                        <li><NavLink to='/Categorias' className='links'>Categorias</NavLink></li>
+                        <li><NavLink to='/Establecimientos' className='links'>Establecimientos</NavLink></li>
+                        <li><NavLink to='/Login' className='links'><FontAwesomeIcon icon={faUser} /></NavLink></li>
+                    </div>
+                </nav>
             </section>
 
-            <nav>
-                <div className="enlaces">
-                    <div className="linksI">
-                        <FontAwesomeIcon icon={faSearch}/> <input type="text" />
-                    </div>
-                    <li><NavLink to='/Categorias' className='links'>Categorias</NavLink></li>
-                    <li><NavLink to='/Establecimientos' className='links'>Establecimientos</NavLink></li>
-                    <li><NavLink to='/Perfil' className='links'><FontAwesomeIcon icon={faUser} /></NavLink></li>
-                </div>
-            </nav>
+
 
             <div className="separador">
                 <hr className="separadorNav"/>

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () =>{
     return(
@@ -13,8 +13,9 @@ export const Footer = () =>{
 
             <section className="cuerpoFooter">
                 <div className="otros">
-                    <li><NavLink to='/About' className='links'>Nosotros</NavLink></li>
-                    <li><NavLink to='/Contacto' className='links'>Contactanos</NavLink></li>
+                    <li><NavLink to='/Nosotros' className='links'>Nosotros</NavLink></li>
+                    <li><NavLink to='/Contact' className='links'>Contactanos</NavLink></li>
+                    <li><NavLink to='/' className='links'>Home</NavLink></li>
                 </div>
 
                 <div className="redes">
