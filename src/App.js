@@ -8,9 +8,11 @@ import {
 import { Home } from './components/pages/home/Home';
 import { Contact } from './components/pages/formularios/Contact';
 import { Nosotros } from './components/pages/paginasSecu/Nosotros';
-import { Login } from './components/pages/paginasSecu/Login';
-import { RegistroPersona } from './components/pages/paginasSecu/RegistroPersona';
-import { RegistroEstablecimiento } from './components/pages/paginasSecu/RegistroEstablecimiento';
+import { Login } from './components/pages/formularios/Login';
+import { RegistroPersona } from './components/pages/formularios/RegistroPersona';
+import { RegistroEstablecimiento } from './components/pages/formularios/RegistroEstablecimiento';
+import { PerfilEstablecimientos } from './components/pages/paginasSecu/PerfilEstablecimientos';
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
         <Route path='/Login' element={<Login/>}/>
         <Route path='/RegistroPersona' element={<RegistroPersona/>}/>
         <Route path='/RegistroEstablecimiento' element={<RegistroEstablecimiento/>}/>
+        <Route path='/PerfilEstablecimiento' element={<PerfilEstablecimientos/>}/>
       </Routes>
       </BrowserRouter>
     </div>

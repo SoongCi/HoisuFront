@@ -23,7 +23,7 @@
 .logo{
   width: 30vh;
   height: auto;
-  margin-top: 12%;
+  margin-top: 25vh;
 }
 
 /*Nav - separador*/
@@ -163,14 +163,14 @@ footer{
 }
 
 .card {
-  width: 230px;
-  height: 300px;
+  width: 25rem;
+  height: auto;
   background: rgb(255, 255, 255);
   border-radius: 0.4em;
   box-shadow: 0.3em 0.3em 0.7em #00000015;
   transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border: rgb(209, 211, 201) 0.15em solid;
-  margin: 0% 5%;
+  margin: 0% 5vw;
   }
 .card:hover {
   border: #a2aa56 0.2em solid;
@@ -193,7 +193,7 @@ footer{
   transition: transform 0.2s linear 0.2s;
 }
 .imgCard{
-  height: 50%;
+  width: 17vw;
   object-fit: cover;
 }
 .card h3{
@@ -202,6 +202,10 @@ footer{
 }
 .card p{
   color: rgb(131, 102, 102);
+}
+.card .linkPerfil{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -277,7 +281,7 @@ footer{
 }
 
 .tecnologias img{
-  height: 10vh;
+  width: 5%;
   margin: 0 5%;
   filter: grayscale(100%) brightness(90%);
 }
@@ -294,9 +298,9 @@ footer{
 
 .slider{
   width: 100%;
-  height: 450px;
+  height: 70vh;
   overflow: hidden;
-  margin: 5% 0 2%;
+  margin: 5vh 0;
 }
 
 .slider ul{
@@ -334,7 +338,7 @@ footer{
 
 .slider .reserva{
   position: relative;
-  bottom: 50vh;
+  bottom: 70%;
 }
 
 .slider h2{
@@ -365,18 +369,21 @@ footer{
 /*Formularios - Contacto*/
 
 .contenedorMainC{
+  display: flex;
   background-image: url(../src/assets/img/fondosForm/formu1.jpg);
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 40rem;
 }
 .formularioContact{
   height: 100vh;
-  padding-top:13vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .formularioEmail{
-  margin:0 33%;
-  width: 21rem;
+  width: 24rem;
   height: 26rem;
   padding: 3%;
   background-color: rgb(255, 255, 255);
@@ -393,14 +400,16 @@ footer{
   background-image: url(../src/assets/img/fondosForm/fondoLogin.jpg);
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 40rem;
 }
 .formularioLogin{
   height: 100vh;
-  padding-top:13vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .formularioL{
-  margin:0 35vw;
   width: 21rem;
   height: 23rem;
   padding: 3%;
@@ -428,14 +437,16 @@ footer{
   background-image: url(../src/assets/img/fondosForm/fondoRegistroP.jpg);
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 40rem;
 }
 .formularioRegistro{
   height: 100vh;
-  padding-top:13vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .formularioRP{
-  margin:0 35vw;
   width: 21rem;
   height: 23rem;
   padding: 3%;
@@ -462,14 +473,16 @@ footer{
   background-image: url(../src/assets/img/fondosForm/fondoRegistroE.jpg);
   background-size: cover;
   width: 100%;
-  height: 45rem;
+  height: 40rem;
 }
 .formularioRegistroE{
   height: 100vh;
-  padding-top:10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .formularioRE{
-  margin:0 35%;
   width: 21rem;
   height: 28rem;
   padding: 3%;
@@ -572,3 +585,77 @@ footer{
   border-color: rgb(107, 0, 2);
   background-color: rgb(104, 0, 2);
 }
+
+
+/*Perfil de los restaurantes*/
+
+.headerPerfil{
+  width: 100%;
+  height: 55vh;
+  overflow: hidden;
+}
+.headerPerfil .perfil img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.nomEstablecimiento h2{
+  color: #4e090a;
+  font-size: 28px;
+  margin-top: 7vh;
+}
+
+.mainPerfil{
+  height: 100vh;
+  width: 80%;
+  margin: 3% 10% 10%;
+  display: flex;
+}
+.mainPerfil .menu{
+  width: 50%;
+  height: auto;
+}
+.mainPerfil .menu img{
+  width: 30vw;
+  margin-bottom: 5%;
+  object-fit: cover;
+}
+.mainPerfil .menu h3{
+  color: #4e090a;
+  font-size: 28px;
+  margin: 5%;
+}
+.mainPerfil .contenedorInformacion{
+  width: 50%;
+  height: auto;
+}
+.mainPerfil .descripcion{
+  text-align: justify;
+  height: auto;
+}
+.mainPerfil .descripcion h3{
+  color: #4e090a;
+  font-size: 28px;
+  margin: 5%;
+}
+.mainPerfil .descripcion p{
+  color: rgb(71, 60, 60);
+  font-size: 16px;
+  margin: 5%;
+}
+.mainPerfil .horario{
+  height: 50vh;
+  width: 100%;
+}
+.mainPerfil .horario img{
+  height: 40vh;
+  object-fit: cover;
+  margin: 5%;
+}
+.mainPerfil .telefono{
+  color: #7e0002;
+}
+
+
+
